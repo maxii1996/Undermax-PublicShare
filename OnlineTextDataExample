@@ -7,14 +7,11 @@
 
 \localimage["Actor1_5", 20, 10, 50%, 50%]       
 
-           \fs[42]     <margin:140>   He is: \color[#03a9fc] \localparty[1, name] </margin> \fs[22]  
+         <margin:140>    \fs[35]    He is: \color[#03a9fc] \localparty[1, name] </margin> \fs[22]  
  
-                 \color[#ffffff] It's a \localparty[1, class]
+                             \color[#ffffff] It's a \localparty[1, class]
 
-<br>
-<br>
-
- <margin:30> His History is:
+ <margin:30> His History is:  </margin> 
 
 \onlinetext("https://raw.githubusercontent.com/maxii1996/Undermax-PublicShare/main/SubTextOnline.txt")
 

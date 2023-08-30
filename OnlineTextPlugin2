@@ -3,7 +3,8 @@
 <line>
 <left>
 
-\localicon[162] <margin:100> \fs[32] Version 1.0 \fs[22] </margin> 
+\localicon[162]
+<margin:100> \fs[32] Version 1.0 \fs[22] </margin> 
 
 \localimage["Actor1_5", 30, 0, 50%, 50%] He is \color[#03a9fc]\localparty[1, name]\color[#ffffff]. He is a \localparty[1, class]
 

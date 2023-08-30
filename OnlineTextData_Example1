@@ -9,7 +9,7 @@
 
 <margin:150> \fs[35]  He is: \color[#03a9fc] \localparty[1, name] </margin> 
  
-<margin:310>                          \fs[22]     \color[#ffffff] It's a \localparty[1, class] </margin>
+                                 \fs[22]     \color[#ffffff] It's a \localparty[1, class] </margin>
 
 <margin:30> His History is:  </margin> 
 

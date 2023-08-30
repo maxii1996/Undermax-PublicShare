@@ -2,14 +2,13 @@
 <center>  WELCOME TO THE ONLINE DATA OF MY PROJECT </center> 
 <line>
 
+\color[#03a9fc] \fs[11] Version 1.0 \fs[22] \color[#ffffff]
 
-\localicon[162] \fs[32] Version 1.0 \fs[22]
-
-\localimage["Actor1_5", 20, 10, 50%, 50%]       
+\localimage["Actor1_5", 20, -20, 50%, 50%]       
 
 <margin:150> \fs[35]  He is: \color[#03a9fc] \localparty[1, name] </margin> 
  
-                                               \fs[22]     \color[#ffffff] It's a \localparty[1, class] 
+<margin:170> \color[#ffffff] It's a \localparty[1, class] </margin> 
 
 <margin:30> His History is:  </margin> 
 

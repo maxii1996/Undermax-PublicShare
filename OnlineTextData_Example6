@@ -4,9 +4,9 @@
 
 \color[#03a9fc] \fs[11] Version 1.0 \fs[22] \color[#ffffff]
 
-\localimage["Actor1_5", 20, -20, 50%, 50%]       
+\localimage["Actor1_5", 20, -20, 60%, 60%]       
 
-<margin:150> <right> \fs[35]  He is: \color[#03a9fc] \localparty[1, name] </margin> \fs[22] </right>
+ <right> \fs[35]  He is: \color[#03a9fc] \localparty[1, name] \fs[22]  </right>
  
 <margin:170> \color[#ffffff] It's a \localparty[1, class] </margin> 
 

@@ -1,0 +1,16 @@
+<line>
+<center>\color[#fcba03]  WELCOME TO THE ONLINE DATA OF MY PROJECT </center> \color[#ffffff]
+<line>
+
+ <margin:100>\localicon[162]</margin> \fs[33] Version 1.0 \fs[22]
+
+\localimage["Actor1_5", 30, 0, 50%, 50%] He is \color[#03a9fc]\localparty[1, name]\color[#ffffff]. He is a \localparty[1, class]
+
+<br>
+<br>
+
+ <margin:30> His History is:
+
+\onlinetext("https://raw.githubusercontent.com/maxii1996/Undermax-PublicShare/main/SubTextOnline.txt")
+
+

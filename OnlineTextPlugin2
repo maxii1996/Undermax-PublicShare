@@ -1,8 +1,9 @@
 <line>
-<center> \color[#fcba03]  WELCOME TO THE ONLINE DATA OF MY PROJECT \color[#ffffff] </center> 
+<center>  WELCOME TO THE ONLINE DATA OF MY PROJECT </center> 
 <line>
 <left>
- <margin:100>\localicon[162]</margin> \fs[32] Version 1.0 \fs[22]
+
+\localicon[162] <margin:100> \fs[32] Version 1.0 \fs[22] </margin> 
 
 \localimage["Actor1_5", 30, 0, 50%, 50%] He is \color[#03a9fc]\localparty[1, name]\color[#ffffff]. He is a \localparty[1, class]
 

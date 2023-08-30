@@ -6,7 +6,7 @@
 
 \localimage["Actor1_5", 20, -20, 50%, 50%]       
 
-<margin:150> \fs[35]  He is: \color[#03a9fc] \localparty[1, name] </margin> 
+<margin:150> \fs[35]  He is: \color[#03a9fc] \localparty[1, name] </margin> \fs[22]
  
 <margin:170> \color[#ffffff] It's a \localparty[1, class] </margin> 
 

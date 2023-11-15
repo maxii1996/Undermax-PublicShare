@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards Generator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        .container {
+            margin-top: 20px;
+        }
+        .reward-row {
+            margin-bottom: 10px;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s;
+        }
+        textarea#allCodesJson {
+            font-size: 0.85em;
+            font-family: 'Courier New', monospace;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .removeRewardButton {
+            margin-top: 4px;
+        }
+        .btn-remove-code {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rewards Generator for RPG Maker MZ</h1>
+        <button class="btn btn-primary mb-3" id="addCodeButton">
+            <i class="fas fa-plus-circle"></i> Add New Code
+        </button>
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Rewards</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="codesContainer"></tbody>
+            </table>
+        </div>
+        <h2>All Codes JSON Output</h2>
+        <textarea id="allCodesJson" class="form-control" rows="15" readonly></textarea>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+    <script>
+        let codesData = [];
+
+        function updateJSONOutput() {
+            const cleanedData = codesData.filter(code => code.code !== '');
+            document.getElementById('allCodesJson').value = JSON.stringify(cleanedData, null, 2);
+        }
+
+        function addCode() {
+            const code = { code: '', startDate: '', endDate: '', rewards: [] };
+            codesData.push(code);
+            const codeId = codesData.length - 1;
+            const codesContainer = document.getElementById('codesContainer');
+
+            const codeRow = document.createElement('tr');
+            codeRow.setAttribute('data-codeid', codeId);
+            codeRow.className = 'code-row fade-in';
+            codeRow.innerHTML = `
+                <td>
+                    <input type="text" class="form-control code-input" placeholder="Unique code" required>
+                </td>
+                <td>
+                    <input type="datetime-local" class="form-control start-date-input" required>
+                </td>
+                <td>
+                    <input type="datetime-local" class="form-control end-date-input" required>
+                </td>
+                <td class="rewards-container"></td>
+                <td>
+                    <button class="btn btn-primary btn-sm add-reward-button" type="button">
+                        <i class="fas fa-plus"></i> Add Reward
+                    </button>
+                    <button class="btn btn-danger btn-sm remove-code-button" type="button">
+                        <i class="fas fa-trash-alt"></i> Remove Code
+                    </button>
+                </td>`;
+            codesContainer.appendChild(codeRow);
+            codeRow.querySelector('.code-input').focus();
+
+            addReward(codeRow);
+        }
+
+        function addReward(codeRow) {
+            const codeId = parseInt(codeRow.dataset.codeid, 10);
+            const rewardsContainer = codeRow.querySelector('.rewards-container');
+            const reward = { type: 'item', id: '', amount: '' };
+            codesData[codeId].rewards.push(reward);
+            const rewardId = codesData[codeId].rewards.length - 1;
+
+            const rewardRow = document.createElement('div');
+            rewardRow.setAttribute('data-rewardid', rewardId);
+            rewardRow.className = 'reward-row fade-in';
+            rewardRow.innerHTML = `
+                <div class="input-group input-group-sm mb-2">
+                    <select class="custom-select reward-type-input" onchange="handleRewardTypeChange(this)">
+                        <option value="item" selected>Item</option>
+                        <option value="weapon">Weapon</option>
+                        <option value="armor">Armor</option>
+                        <option value="switch">Switch</option>
+                        <option value="variable">Variable</option>
+                    </select>
+                    <input type="number" class="form-control reward-id-input" placeholder="ID" required>
+                    <input type="text" class="form-control reward-amount-input" placeholder="Amount/Value" required>
+                    <div class="input-group-append">
+                        <button class="btn btn-danger remove-reward-button" type="button">
+                            <i class="fas fa-minus-circle"></i>
+                        </button>
+                    </div>
+                </div>`;
+            rewardsContainer.appendChild(rewardRow);
+            updateJSONOutput();
+        }
+
+        document.getElementById('addCodeButton').addEventListener('click', addCode);
+
+        document.getElementById('codesContainer').addEventListener('click', function(event) {
+            const codesContainer = document.getElementById('codesContainer');
+            if (event.target.matches('.add-reward-button')) {
+                const codeRow = event.target.closest('.code-row');
+                addReward(codeRow);
+            } else if (event.target.matches('.remove-reward-button')) {
+                const rewardRow = event.target.closest('.reward-row');
+                const codeRow = event.target.closest('.code-row');
+                const codeId = parseInt(codeRow.dataset.codeid, 10);
+                const rewardId = parseInt(rewardRow.dataset.rewardid, 10);
+                codesData[codeId].rewards.splice(rewardId, 1);
+                rewardRow.remove();
+                updateJSONOutput(); 
+            } else if (event.target.matches('.remove-code-button')) {
+                const codeRow = event.target.closest('.code-row');
+                const codeId = parseInt(codeRow.dataset.codeid, 10);
+                codesData.splice(codeId, 1);
+                codeRow.remove();
+                updateJSONOutput(); 
+            }
+        });
+
+        document.getElementById('codesContainer').addEventListener('input', function(event) {
+            const element = event.target;
+            const codeRow = element.closest('.code-row');
+            const codeId = parseInt(codeRow.dataset.codeid, 10);
+            const code = codesData[codeId];
+
+            if (element.matches('.code-input')) {
+                code.code = element.value;
+            } else if (element.matches('.start-date-input')) {
+                code.startDate = element.value + "Z";
+            } else if (element.matches('.end-date-input')) {
+                code.endDate = element.value + "Z";
+            } else if (element.matches('.reward-type-input') || element.matches('.reward-id-input') || element.matches('.reward-amount-input')) {
+                const rewardRow = element.closest('.reward-row');
+                const rewardId = parseInt(rewardRow.dataset.rewardid, 10);
+                const reward = code.rewards[rewardId];
+                if (element.matches('.reward-type-input')) {
+                    reward.type = element.value;
+                    handleRewardTypeChange(element);
+                } else if (element.matches('.reward-id-input')) {
+                    reward.id = parseInt(element.value, 10) || '';
+                } else if (element.matches('.reward-amount-input')) {
+                    if (reward.type === 'switch') {
+                        reward.amount = element.value === 'true';
+                    } else {
+                        reward.amount = parseInt(element.value, 10) || '';
+                    }
+                }
+            }
+            updateJSONOutput(); 
+        });
+
+        window.handleRewardTypeChange = function handleRewardTypeChange(selectElement) {
+            const rewardRow = selectElement.closest('.reward-row');
+            const amountInput = rewardRow.querySelector('.reward-amount-input');
+            if (selectElement.value === 'switch') {
+                amountInput.type = 'text';
+                amountInput.placeholder = 'true/false';
+            } else {
+                amountInput.type = 'number';
+                amountInput.placeholder = 'Amount/Value';
+            }
+        };
+
+        addCode();
+    </script>
+</body>
+</html>

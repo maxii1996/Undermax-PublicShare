@@ -1,0 +1,83 @@
+Changelog for Demo RPG Game
+
+Version 1.0.0
+- New endgame boss added: The Shadow King
+- Added two new regions: Frozen Wastes & Sunken City
+- New companion system with 5 unique allies
+- Improved graphics and animation quality
+- Introduced new crafting system
+- Balancing adjustments for mid-game enemies
+- Fixed issue with save game corruption
+- Enhanced soundtrack with 10 new tracks
+- UI improvements for inventory management
+- Added language support for Spanish and German
+
+Version 0.9.0
+- Added 'Dragon's Lair' dungeon with unique loot
+- New set of legendary weapons introduced
+- Enhanced NPC interaction and dialogue trees
+- Multiplayer mode beta testing phase begun
+- Performance improvements for lower-end PCs
+- Fixed clipping issues in the Elven Forest region
+- Minor bug fixes and stability enhancements
+
+Version 0.8.0
+- Overhauled magic system with new spells
+- Added day-night cycle impacting NPC schedules
+- Implemented dynamic weather system
+- New enemy type: Desert Marauders
+- Customizable player housing introduced
+- Fixed issues with quest tracking UI
+- Various audio bugs addressed and fixed
+
+Version 0.7.0
+- Expanded main storyline with two new chapters
+- Added new mount system with 3 creatures
+- Major AI improvements for enemy behavior
+- Enhanced character customization options
+- Fixed rare crash during fast-travel
+- Minor graphical tweaks and texture updates
+
+Version 0.6.0
+- Introduced side quests system with 20 quests
+- New skill tree for stealth-based gameplay
+- Added achievements and in-game rewards
+- Improved collision detection in urban areas
+- Fixed issue with controller input lag
+- Various localization updates for French and Japanese
+
+Version 0.5.0
+- Added new region: The Cursed Marshlands
+- New enemy type: Swamp Creatures
+- Implemented basic crafting system
+- Balancing adjustments for early game progression
+- Fixed save points not functioning correctly
+- Minor UI enhancements and bug fixes
+
+Version 0.4.0
+- Added guild system with three factions
+- New 'Raid the Dungeon' multiplayer event
+- Improved load times on all platforms
+- Fixed various pathfinding issues for NPCs
+- Balancing tweaks for magic spells
+
+Version 0.3.0
+- New character class: The Warlock
+- Implemented pets system with 5 pets
+- Added in-game cutscenes for major plot points
+- Fixed inventory management bugs
+- Performance optimization for large-scale battles
+
+Version 0.2.0
+- Introduced three new bosses in main campaign
+- Added voice acting for main characters
+- Enhanced tutorial for new players
+- Fixed issues with multiplayer matchmaking
+- Minor graphical improvements and bug fixes
+
+Version 0.1.0
+- Initial release
+- Basic gameplay mechanics and storyline
+- Two playable classes: Warrior and Mage
+- Starting region: The Kingdom of Eldoria
+- Basic enemy types and quest system

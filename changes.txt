@@ -1,4 +1,3 @@
-Changelog for Demo RPG Game
 
 Version 1.0.0
 - New endgame boss added: The Shadow King

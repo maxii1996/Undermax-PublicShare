@@ -1,0 +1,19 @@
+[
+  {
+    "type": "item",
+    "id": 7,
+    "price": 300,
+    "availableFrom": "2024-02-01T00:00:00",
+    "availableTo": "2024-02-28T23:59:59"
+  },
+  {
+    "type": "item",
+    "id": 7,
+    "price": 500,
+  },
+  {
+    "type": "armor",
+    "id": 3,
+    "price": 300
+  }
+]

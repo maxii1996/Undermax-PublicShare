@@ -2,4 +2,5 @@
   {"type": "item", "id": 14, "price": 400},
   {"type": "weapon", "id": 20, "price": 500},
   {"type": "armor", "id": 44, "price": 1000}
+ {"type": "armor", "id": 14, "price": 2000}
 ]

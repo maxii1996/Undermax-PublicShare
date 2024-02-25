@@ -8,12 +8,12 @@
   },
   {
     "type": "item",
-    "id": 7,
+    "id": 8,
     "price": 500
   },
   {
     "type": "armor",
     "id": 3,
-    "price": 300
+    "price": 700
   }
 ]

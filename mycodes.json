@@ -1,28 +1,13 @@
 [
   {
-    "code": "HAPPYDAY",
-    "startDate": "2023-11-15T17:33Z",
-    "endDate": "2023-11-15T17:36Z",
+    "code": "FANTASY",
+    "startDate": "2024-03-24T00:50Z",
+    "endDate": "2024-03-31T20:50Z",
     "rewards": [
       {
         "type": "item",
         "id": 7,
-        "amount": 5
-      },
-      {
-        "type": "item",
-        "id": 15,
-        "amount": 1
-      },
-      {
-        "type": "switch",
-        "id": 10,
-        "amount": true
-      },
-      {
-        "type": "variable",
-        "id": 10,
-        "amount": 100
+        "amount": 10
       }
     ]
   }

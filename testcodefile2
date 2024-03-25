@@ -1,0 +1,19 @@
+[
+  {
+    "code": "123",
+    "startDate": "2024-03-25T17:21Z",
+    "endDate": "2024-12-25T18:21Z",
+    "rewards": [
+      {
+        "type": "item",
+        "id": 7,
+        "amount": 10
+      },
+      {
+        "type": "switch",
+        "id": 100,
+        "amount": true
+      }
+    ]
+  }
+]

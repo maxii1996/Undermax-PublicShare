@@ -1,0 +1,13 @@
+  {
+    "code": "123",
+    "startDate": "2024-03-24T16:19Z",
+    "endDate": "2024-12-31T16:19Z",
+    "rewards": [
+      {
+        "type": "switch",
+        "id": 469,
+        "amount": true
+      }
+    ]
+  }
+]

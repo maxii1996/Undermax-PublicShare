@@ -1,8 +1,8 @@
 {
   "conditions": [
     {
-      "type": "dateRange",
-      "date": "2024-10-11T12:00:00Z",
+      "type": "exactDate",
+      "date": "2024-10-11",
       "start": "2024-10-11T00:00:00Z",
       "end": "2024-10-12T12:00:00Z",
       "ifTrue": [
@@ -13,7 +13,7 @@
         },
         {
           "type": "variable",
-          "id": 12,
+          "id": 25,
           "state": "2"
         }
       ],
@@ -25,7 +25,7 @@
         },
         {
           "type": "variable",
-          "id": 12,
+          "id": 25,
           "state": "1"
         }
       ]

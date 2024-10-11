@@ -13,7 +13,7 @@
         },
         {
           "type": "variable",
-          "id": 25,
+          "id": 12,
           "state": "2"
         }
       ],
@@ -25,7 +25,7 @@
         },
         {
           "type": "variable",
-          "id": 25,
+          "id": 12,
           "state": "1"
         }
       ]

@@ -1,6 +1,0 @@
-[
-{"type": "switch", "id": 20, "state": "on"},
-{"type": "switch", "id": 21, "state": "off"},
-{"type": "variable", "id": 10, "value": 3},
-{"type": "variable", "id": 11, "value": -35}
-]

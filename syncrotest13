@@ -1,7 +1,7 @@
 {
   "conditions": [
     {
-      "type": "dateRange",
+      "type": "exactDate",
       "date": "2024-10-14",
       "start": "2024-10-13T01:00:00Z",
       "end": "2024-10-14T23:59:00Z",
@@ -20,8 +20,8 @@
       "ifFalse": [
         {
           "type": "switch",
-          "id": "",
-          "state": ""
+          "id": 26,
+          "state": "true"
         }
       ]
     }

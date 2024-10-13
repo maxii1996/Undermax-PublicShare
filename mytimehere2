@@ -2,7 +2,7 @@
   "conditions": [
     {
       "type": "exactDate",
-      "date": "2024-10-13",
+      "date": "2024-10-14",
       "start": "",
       "end": "",
       "ifTrue": [
@@ -22,7 +22,18 @@
           "state": "99"
         }
       ],
-      "ifFalse": []
+      "ifFalse": [
+        {
+          "type": "switch",
+          "id": 15,
+          "state": "false"
+        },
+        {
+          "type": "variable",
+          "id": 19,
+          "state": "80"
+        }
+      ]
     }
   ]
 }

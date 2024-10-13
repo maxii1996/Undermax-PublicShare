@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "type": "exactDate",
+      "date": "2024-10-12",
+      "start": "",
+      "end": "",
+      "ifTrue": [
+        {
+          "type": "switch",
+          "id": 1,
+          "state": "true"
+        }
+      ],
+      "ifFalse": [
+        {
+          "type": "switch",
+          "id": 2,
+          "state": "true"
+        }
+      ]
+    }
+  ]
+}

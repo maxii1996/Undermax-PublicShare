@@ -3,7 +3,7 @@
     {
       "type": "dateRange",
       "date": "2024-10-15",
-      "start": "2024-10-15 12:00:00",
+      "start": "2024-10-15 00:00:00",
       "end": "2024-10-16 12:00:00",
       "ifTrue": [
         {
@@ -27,6 +27,11 @@
           "type": "variable",
           "id": 28,
           "state": "666"
+        },
+        {
+          "type": "switch",
+          "id": 26,
+          "state": "false"
         }
       ]
     }

@@ -24,7 +24,7 @@
           "state": "true"
         },
         {
-          "type": "switch",
+          "type": "variable",
           "id": 28,
           "state": "666"
         }

@@ -1,37 +1,32 @@
 {
   "conditions": [
     {
-      "type": "exactDate",
-      "date": "2024-10-14",
-      "start": "",
-      "end": "",
+      "type": "dateRange",
+      "date": "2024-10-15",
+      "start": "2024-10-15 12:00:00",
+      "end": "2024-10-16 12:00:00",
       "ifTrue": [
         {
           "type": "switch",
-          "id": 15,
-          "state": "true"
-        },
-        {
-          "type": "switch",
-          "id": 16,
+          "id": 26,
           "state": "true"
         },
         {
           "type": "variable",
-          "id": 19,
-          "state": "99"
+          "id": 28,
+          "state": "777"
         }
       ],
       "ifFalse": [
         {
           "type": "switch",
-          "id": 15,
-          "state": "false"
+          "id": 27,
+          "state": "true"
         },
         {
-          "type": "variable",
-          "id": 19,
-          "state": "80"
+          "type": "switch",
+          "id": 28,
+          "state": "666"
         }
       ]
     }

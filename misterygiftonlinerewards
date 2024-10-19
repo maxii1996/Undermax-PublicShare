@@ -1,0 +1,14 @@
+[
+  {
+    "code": "undermax2024",
+    "startDate": "2024-10-18T00:00Z",
+    "endDate": "2024-10-31T23:59Z",
+    "rewards": [
+      {
+        "type": "item",
+        "id": 7,
+        "amount": 5
+      }
+    ]
+  }
+]

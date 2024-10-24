@@ -19,5 +19,17 @@
             "https://example.com/plugin2_image1.jpg"
         ],
         "video": "https://www.youtube.com/watch?v=djwxwJb-kVM"
+    },
+    {
+        "name": "Visual Pathfinding",
+        "description": "Creates a visual pathfinding system to track an event in the map.",
+        "url": "https://undermax.itch.io/visualpath",
+        "cover_image": "https://img.itch.zone/aW1hZ2UvMjk1NDIxNS8xNzY3OTUyOC5wbmc=/347x500/i20kZK.png",
+        "additional_images": [
+            "https://img.itch.zone/aW1hZ2UvMjk1NDIxNS8xNzY3OTUyOS5wbmc=/347x500/%2BjgnAr.png",
+            "https://img.itch.zone/aW1hZ2UvMjk1NDIxNS8xNzY3OTUzMC5wbmc=/347x500/5nVU%2BQ.png"
+        ],
+        "video": "https://www.youtube.com/watch?v=Fd4umyidmfI"
     }
+
 ]

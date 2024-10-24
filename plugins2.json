@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Equipment Evolution",
+        "description": "Allows weapons to evolve and change traits based on level.",
+        "url": "https://undermax.itch.io/evo",
+        "cover_image": "https://img.itch.zone/aW1hZ2UvMzA1OTU4MS8xODI5Nzk1OC5wbmc=/347x500/2wLpK0.png",
+        "additional_images": [
+            "https://img.itch.zone/aW1hZ2UvMzA1OTU4MS8xODI5Nzk1Mi5naWY=/347x500/MOiRQO.gif",
+            "https://img.itch.zone/aW1hZ2UvMzA1OTU4MS8xODI5Nzk1My5naWY=/347x500/2oaDbo.gif"
+        ],
+        "video": "https://www.youtube.com/watch?v=hmEZM-k5k4M"
+    },
+    {
+        "name": "Gacha Minigame 2",
+        "description": "A new gacha style Minigame for RPG MAKER MZ using videos and Banners!",
+        "url": "https://undermax.itch.io/gacha2",
+        "cover_image": "https://img.itch.zone/aW1hZ2UvMzAxNTY1OS8xODA1Njc4OC5wbmc=/347x500/HmKgsF.png",
+        "additional_images": [
+            "https://example.com/plugin2_image1.jpg"
+        ],
+        "video": "https://www.youtube.com/watch?v=djwxwJb-kVM"
+    }
+]

@@ -50,6 +50,17 @@
             "https://img.itch.zone/aW1hZ2UvMjg3NjE5MS8xNzE5ODQ2NS5naWY=/347x500/ZavaGw.gif"
         ],
         "video": "https://www.youtube.com/watch?v=mU0F-AUwuuo"
+    },
+    {
+        "name": "Items Recycle",
+        "description": "This plugin allows you to add an item recycling system to your game!",
+        "url": "https://undermax.itch.io/items-recycle",
+        "cover_image": "https://img.itch.zone/aW1nLzE2OTk2Mjc2LnBuZw==/315x250%23c/iuo5Hz.png",
+        "additional_images": [
+            "https://img.itch.zone/aW1hZ2UvMjg0NDEyOS8xNjk5NjMwOS5wbmc=/347x500/BwAUdT.png",
+            "https://img.itch.zone/aW1hZ2UvMjg0NDEyOS8xNjk5NjMxMC5wbmc=/347x500/OTkSIT.png"
+        ],
+        "video": "https://www.youtube.com/watch?v=QcXH-gHA988"
     }
 
 ]

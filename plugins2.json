@@ -40,6 +40,16 @@
             "https://img.itch.zone/aW1hZ2UvMjg5OTY5My8xNzM0NzMyOC5wbmc=/347x500/08oLFo.png"
         ],
         "video": "https://www.youtube.com/watch?v=LrcnyahsR-E"
+    },
+     {
+        "name": "Treasure Hunt Minigame",
+        "description": "Adds a Treasure Hunt Minigame to your game!",
+        "url": "https://undermax.itch.io/treasure-hunt",
+        "cover_image": "https://img.itch.zone/aW1nLzE3MTk4MDY5LnBuZw==/315x250%23c/bclXdH.png",
+        "additional_images": [
+            "https://img.itch.zone/aW1hZ2UvMjg3NjE5MS8xNzE5ODQ2NS5naWY=/347x500/ZavaGw.gif"
+        ],
+        "video": "https://www.youtube.com/watch?v=mU0F-AUwuuo"
     }
 
 ]

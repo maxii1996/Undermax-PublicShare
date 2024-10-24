@@ -61,6 +61,17 @@
             "https://img.itch.zone/aW1hZ2UvMjg0NDEyOS8xNjk5NjMxMC5wbmc=/347x500/OTkSIT.png"
         ],
         "video": "https://www.youtube.com/watch?v=QcXH-gHA988"
+    },
+     {
+        "name": "Radio System",
+        "description": "Adds a radio to play music in background within the game with a customizable UI.",
+        "url": "https://undermax.itch.io/radio-system",
+        "cover_image": "https://img.itch.zone/aW1nLzE2ODE2MTMwLnBuZw==/315x250%23c/9nHWEZ.png",
+        "additional_images": [
+            "https://img.itch.zone/aW1hZ2UvMjgxNTQ0NS8xNjgxNjQ1OS5wbmc=/347x500/l3GMy3.png",
+            "https://img.itch.zone/aW1hZ2UvMjgxNTQ0NS8xNjgxNjU1MS5wbmc=/347x500/SIHQwm.png"
+        ],
+        "video": "https://www.youtube.com/watch?v=rlXP6Nb6bNc"
     }
 
 ]
